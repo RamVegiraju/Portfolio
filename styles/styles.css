@@ -100,6 +100,19 @@ body{
   margin-bottom: 20px;
 }
 
+.wrapper .main_content .info h3{
+    color: black;
+  }
+
+/*
+.wrapper .main_content .info ul,li {
+    margin-left: 0; padding-left: 20px;
+}*/
+
+.Experience ul,li {
+    margin-left: 0; padding-left: 10px;
+}
+
 @media (max-height: 500px){
   .social_media{
     display: none !important;
@@ -118,3 +131,13 @@ body{
     overflow: hidden;
     border-radius: 50%;
 }
+
+.SchoolName {
+    font-weight: bold;
+}
+
+
+* {box-sizing:border-box}
+
+
+
