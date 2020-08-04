@@ -251,6 +251,7 @@ body{
 
 
 
+/*For the filter on projects*/
   .container {
     overflow: hidden;
   }
@@ -259,8 +260,8 @@ body{
     float: left;
     background-color: #2196F3;
     color: #ffffff;
-    width: 100px;
-    line-height: 100px;
+    width: 200px;
+    line-height: 50px;
     text-align: center;
     margin: 2px;
     display: none; /* Hidden by default */
@@ -290,3 +291,35 @@ body{
     background-color: #666;
     color: white;
   }
+
+
+
+
+
+
+
+
+  [id^=modal] {
+    display: none;
+    border: 1px solid red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 3em;
+    min-width: 5em;
+    max-width: 10em;
+    }
+  input[type=checkbox] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    }
+  #modal1:target {
+    display: block;
+    }
+  #modal2:target {
+    display: block;
+    }
+  [id^=modal] a {
+    float: right;
+    }

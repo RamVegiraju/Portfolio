@@ -1,59 +1,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ram Vegiraju</title>
     <link rel="stylesheet" href="/Users/ramvegiraju/Desktop/personalProjects/personalPortfolio/styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script>
-                filterSelection("all")
-        function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-            w3RemoveClass(x[i], "show");
-            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-        }
-
-        // Show filtered elements
-        function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-            }
-        }
-        }
-
-        // Hide elements that are not selected
-        function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-            }
-        }
-        element.className = arr1.join(" ");
-        }
-
-        // Add active class to the current control button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-        }
-    </script>
+    <script src="/Users/ramvegiraju/Desktop/personalProjects/personalPortfolio/js/projects.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 <div class="wrapper">
     <div class="sidebar">
@@ -70,7 +28,7 @@
             <li><a href="contact.html"><i class="fas fa-address-book"></i>Contact</a></li>
         </ul>
         <div class="social_media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/ram-vegiraju-81272b162/"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/RamVegiraju"><i class="fab fa-github"></i></a>
         </div>
@@ -82,6 +40,8 @@
         <h1>Check out my projects below!</h1>
         <hr>
         <br>
+        
+        <!--
         <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Show all</button>
             <button class="btn" onclick="filterSelection('fullstack')"> Full-Stack</button>
@@ -93,14 +53,23 @@
             <button class="btn" onclick="filterSelection('other')"> Other</button>
         </div>
         
-        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
         <div class="container">
-            <div class="filterDiv fullstack DL timeseries">COVID-19 Forecasting Dashboard</div>
-            <div class="filterDiv nlp fullstack">Extractive Text Summarizer</div>
-            <div class="filterDiv other">ISA Career Advisory</div>
-            <div class="filterDiv cv">SketchMe</div>
+            <button class="filterDiv fullstack DL timeseries">COVID-19 Forecasting Dashboard</button>
+            <button class="filterDiv nlp fullstack">Extractive Text Summarizer</button>
+            <button class="filterDiv other">ISA Career Advisory</button>
+            <button class="filterDiv cv">SketchMe</button>
         </div>
-        
+    -->
+        <div id="content">
+            <p>This is the content-container</p>
+            <a href="#modal1">Open first modal</a><br>
+            <a href="#modal2">Open second modal</a>
+          <div id="modal1"><a href="#">Close</a>This is the first modal</div>
+          <div id="modal2"><a href="#">Close</a>This is the second modal</div>
+        </div>
+
+
     </div>
     
 </div>
