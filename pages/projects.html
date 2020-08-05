@@ -10,6 +10,7 @@
     <script src="/Users/ramvegiraju/Desktop/personalProjects/personalPortfolio/js/projects.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
@@ -37,11 +38,11 @@
         <div class="header">Machine Learning Engineer & Data Scientist</div>
         <!-- Control buttons -->
         <br>
-        <h1>Check out my projects below!</h1>
+        <h1 style="margin-left: 20px">Click on my projects below for more information!</h1>
         <hr>
         <br>
         
-        <!--
+        
         <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Show all</button>
             <button class="btn" onclick="filterSelection('fullstack')"> Full-Stack</button>
@@ -55,19 +56,105 @@
         
 
         <div class="container">
-            <button class="filterDiv fullstack DL timeseries">COVID-19 Forecasting Dashboard</button>
-            <button class="filterDiv nlp fullstack">Extractive Text Summarizer</button>
-            <button class="filterDiv other">ISA Career Advisory</button>
-            <button class="filterDiv cv">SketchMe</button>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+                  <h3>COVID-19 Forecasting Dashboard</h3>
+                  <hr>
+                  <h6>Tools/Skills: Python, Tensorflow, RNNs/LSTMs, Bootstrap/Javascript, Facebook Prophet Library</h6>
+                  <p>Created a live informative time-series forecasting dashboard predicting COVID-19 cases using Deep Learning. Worked with Bootstrap and Javascript to 
+                      host visualizations and predictions based off of the Machine Learning algorithms. Also used Facebook's Prophet Library to develop a 
+                    SARIMA model to compare to deep learning performance in forecasting cases.</p>
+                </div>
+              </div>
+              <script>
+                  function togglePopup(){
+                    document.getElementById("popup-1").classList.toggle("active");
+                    }
+              </script>
+            <button onclick="togglePopup()" class="filterDiv fullstack DL timeseries">COVID-19 Forecasting Dashboard</button>
+
+            <div class="popup2" id="popup-2">
+                <div class="overlay2"></div>
+                <div class="content2">
+                  <div class="close-btn2" onclick="togglePopup2()">&times;</div>
+                  <h3>Extractive Text Summarizer</h3>
+                  <hr>
+                  <h6>Tools/Skills: Python, Flask, Keras, NLTK, Spacy, HTML/CSS</h6>
+                  <p>Developed a web application that takes in text of any length and returns a summary with the entities extracted and highlighted. Preprocessed 
+                      and cleansed data for analysis with NLTK and used Spacy for the Entity Extraction. Currently working on an abstractive approach with a seq2seq
+                      model using Keras and Tensorflow.
+                  </p>
+                </div>
+              </div>
+              <script>
+                function togglePopup2(){
+                  document.getElementById("popup-2").classList.toggle("active");
+                  }
+            </script>
+            <button onclick="togglePopup2()" class="filterDiv nlp fullstack">Extractive Text Summarizer</button>
+
+            <div class="popup3" id="popup-3">
+                <div class="overlay3"></div>
+                <div class="content3">
+                  <div class="close-btn3" onclick="togglePopup3()">&times;</div>
+                  <h3>ISA Career Website</h3>
+                  <hr>
+                  <h6>Tools/Skills: Javascript, HTML/CSS, Bootstrap, MySQL</h6>
+                  <p>Developed an interactive web application for incoming undergraduates to access for career and major advice for over 400 students in
+                      the Indian Student Association at UVA. Stores students questions in MySQL database and queries form results to match student to an alumni for contact.
+                  </p>
+                </div>
+              </div>
+              <script>
+                function togglePopup3(){
+                  document.getElementById("popup-3").classList.toggle("active");
+                  }
+            </script>
+            <button onclick="togglePopup3()" class="filterDiv other">ISA Career Advisory</button>
+
+
+            <div class="popup4" id="popup-4">
+                <div class="overlay4"></div>
+                <div class="content4">
+                  <div class="close-btn4" onclick="togglePopup4()">&times;</div>
+                  <h3>SketchMe</h3>
+                  <hr>
+                  <h6>Tools/Skills: Python, OpenCV, Flask, HTML/CSS</h6>
+                  <p>
+                      Developed a simple web application that takes in an image and returns a gray&white sketch using OpenCV. Working on integrating colored sketches.
+                  </p>
+                </div>
+              </div>
+              <script>
+                function togglePopup4(){
+                  document.getElementById("popup-4").classList.toggle("active");
+                  }
+            </script>
+            <button onclick="togglePopup4()" class="filterDiv cv">SketchMe</button>
         </div>
-    -->
+
+    <!--
         <div id="content">
-            <p>This is the content-container</p>
-            <a href="#modal1">Open first modal</a><br>
-            <a href="#modal2">Open second modal</a>
-          <div id="modal1"><a href="#">Close</a>This is the first modal</div>
+            <a style="margin-left: 20px; font-weight: bold; display: list-item; list-style-type: disc; list-style-position: inside;" href="#modal1">Extractive Text Summarizer: Python,NLP</a><br>
+            <a style="margin-left: 20px; font-weight: bold;display: list-item; list-style-type: disc; list-style-position: inside;" href="#modal2">COVID-19 Forecasting Dashboard: Tensorflow,Python,Time-Series Forecasting</a>
+          <div id="modal1"><a href="#">Close</a>A Flask application that takes in input text of any length and returns a summary using
+        Extractive Text Summarization. Text is preprocessed (cleansed & tokenized) and NLTK library is used to help with text summarization.
+        Named Entity Recognition of the summary is displayed through the use of Spacy.</div>
           <div id="modal2"><a href="#">Close</a>This is the second modal</div>
         </div>
+    -->
+    <!--
+    <script>
+        function togglePopup(){
+        document.getElementById("popup-1").classList.toggle("active");
+}
+    </script>
+   
+      
+      <button onclick="togglePopup()">Show Popup</button>
+    -->
 
 
     </div>
