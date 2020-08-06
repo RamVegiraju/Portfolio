@@ -83,6 +83,10 @@ body{
   margin-left: 200px;
 }
 
+.wrapper .main_content .img{
+  
+}
+
 .wrapper .main_content .header{
   padding: 20px;
   background: #fff;
@@ -126,8 +130,8 @@ body{
 
 .imageContainer {
     position: relative;
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 50%;
 }
