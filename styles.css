@@ -361,6 +361,22 @@ body{
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Extractive Text Summarizer*/
   .popup2 .overlay2 {
     position:fixed;
     top:0px;
@@ -416,7 +432,7 @@ body{
 
 
 
-
+/*COVID X-Ray*/
 
   .popup21 .overlay21 {
     position:fixed;
@@ -475,6 +491,11 @@ body{
 
 
 
+
+
+
+
+  /*ISA Career Site*/
   .popup3 .overlay3 {
     position:fixed;
     top:0px;
@@ -529,6 +550,12 @@ body{
 
 
   
+
+
+
+
+
+  /* SketchMe*/
 
 
   .popup4 .overlay4 {
@@ -586,6 +613,15 @@ body{
   
 
 
+
+
+
+
+  /* Kidney Disease Classification*/
+
+
+
+
   .popup5 .overlay5 {
     position:fixed;
     top:0px;
@@ -639,6 +675,14 @@ body{
 
 
 
+
+
+
+
+
+
+
+  /* Movie Reviews Sentiment Analysis*/
   .popup6 .overlay6 {
     position:fixed;
     top:0px;
@@ -694,6 +738,12 @@ body{
 
 
 
+
+
+
+
+
+  /* NYC Taxi Fare Regression*/
   .popup7 .overlay7 {
     position:fixed;
     top:0px;
