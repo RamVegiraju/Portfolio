@@ -307,6 +307,10 @@ body{
 
 
 
+
+
+
+  
 /* Modal boxes for projects*/
   .popup .overlay {
     position:fixed;
@@ -432,6 +436,18 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*COVID X-Ray*/
 
   .popup21 .overlay21 {
@@ -487,6 +503,11 @@ body{
 
 
   
+
+
+
+
+
 
 
 
@@ -555,9 +576,20 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* SketchMe*/
-
-
   .popup4 .overlay4 {
     position:fixed;
     top:0px;
@@ -617,11 +649,15 @@ body{
 
 
 
+
+
+
+
+
+
+
+
   /* Kidney Disease Classification*/
-
-
-
-
   .popup5 .overlay5 {
     position:fixed;
     top:0px;
@@ -672,6 +708,7 @@ body{
     transition:all 300ms ease-in-out;
     transform:translate(-50%,-50%) scale(1);
   }
+
 
 
 
